@@ -1,8 +1,8 @@
 import React from "react";
-import NavBar from "./Header/NavBar/NavBar";
-import FrontPage from "./Header/FrontPage/FrontPage";
+import NavBar from "./Home/NavBar/NavBar";
+import FrontPage from "./Home/FrontPage/FrontPage";
 
-class Head extends React.Component {
+class Home extends React.Component {
     render() {
         return (
             <header>
@@ -13,4 +13,4 @@ class Head extends React.Component {
     }
 }
 
-export default Head;
+export default Home;
