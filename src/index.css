@@ -1,4 +1,4 @@
-/* // ++++++++++ Global ++++++++++  // */
+/*  Global  */
 * {
   box-sizing: border-box;
 }
@@ -27,7 +27,7 @@ section {
   overflow-x: hidden;
 }
 
-/* // +++++++++ Header ++++++++++  // */
+/*  Header */
 
 header {
   background: #4467d1;
@@ -125,7 +125,7 @@ header .container .col-md-7 p {
   font-weight: bold;
 }
 
-/* // ++++++++++ About ++++++++++ // */
+/* About */
 
 .about {
   padding: 5vmin 0vmin;
@@ -159,7 +159,7 @@ header .container .col-md-7 p {
   color: rgba(0, 0, 0, 0.678);
 }
 
-/* // ++++++++++ Sample Work ++++++++++ // */
+/* Sample Work */
 
 .service>h1 {
   padding-top: 6vmin;
@@ -198,13 +198,13 @@ header .container .col-md-7 p {
   transform: scale(1.01);
 }
 
-/* // +++++++++ Contact Form ++++++++++  // */
+/* Contact Form */
 
 .input-group {
   padding-bottom: 1rem;
 }
 
-/* // ++++++++++ Footer ++++++++++  // */
+/*  Footer */
 footer {
   background: #fdfeff;
   overflow-x: hidden;
@@ -270,7 +270,7 @@ footer .btn-contact {
   background-color: #343a40;
 }
 
-/* // ++++++++++ Animation ++++++++++ // */
+/*  Animation */
 
 /* Frontpage Fade In */
 .fade-in {
@@ -327,7 +327,7 @@ footer .btn-contact {
   }
 }
 
-/* // +++++++++ Sticky Navigation + Dropdown Animation ++++++++++  // */
+/* Sticky Navigation + Dropdown Animation */
 
 .sticky {
   position: fixed;
@@ -369,7 +369,7 @@ footer .btn-contact {
   }
 }
 
-/* // ++++++++++ Mobile view ++++++++++ // */
+/* Mobile view */
 
 @media screen and (max-width: 768px) {
   header .navbar-brand {
