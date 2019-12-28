@@ -1,3 +1,12 @@
+/* // ++++++++++ Global ++++++++++  // */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +19,370 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+header,
+section {
+  overflow-x: hidden;
+}
+
+/* // +++++++++ Header ++++++++++  // */
+
+header {
+  background: #4467d1;
+}
+
+header a {
+  font-size: 1em;
+  color: #f5f5f5;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header .nav-item:last-child {
+  padding-right: 10.5em;
+}
+
+header .nav-item {
+  padding: 0.9em;
+}
+
+header .navbar-brand {
+  font-size: 1.6em;
+  padding-left: 8rem;
+}
+
+header .navbar-brand:hover {
+  color: rgb(243, 243, 243);
+}
+
+header .nav-link:hover {
+  color: rgb(243, 243, 243);
+}
+
+header .row .col-md-7 {
+  padding: 22.5vmin 1vmin;
+  padding-bottom: 35vmin;
+}
+
+header .row .col-md-5 {
+  padding: 4.2vmin 1vmin;
+}
+
+header .container .col-md-7 h3 {
+  text-align: left;
+  padding: 1vmin;
+  letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1 {
+  text-align: left;
+  font-size: 8vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+}
+
+header .container .col-md-7 p {
+  text-align: left;
+  padding: 1vmin;
+  padding-bottom: 1vmin;
+}
+
+.headerbtn {
+  float: left;
+}
+
+.primary-btn {
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.secondary-btn {
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* // ++++++++++ About ++++++++++ // */
+
+.about {
+  padding: 5vmin 0vmin;
+}
+
+.about .row .col-md-12 .panel {
+  top: 5vmin;
+  left: -18vmin;
+  background: #ffffff;
+  border-radius: 3px;
+  text-align: left;
+  padding: 13vmin 10vmin 15vmin 10vmin;
+  box-shadow: 0px 0px 42px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.about .row .col-md-12 .panel h1 {
+  font-weight: bold;
+  padding: 0.2em 0;
+  font-size: 2em;
+}
+
+.about .row .col-md-12 .panel h3 {
+  font-weight: normal;
+  padding: 0.4em 0;
+  font-size: 1.5em;
+}
+
+.about .row .col-md-12 .panel p {
+  font-size: 1.1em;
+  color: rgba(0, 0, 0, 0.678);
+}
+
+/* // ++++++++++ Sample Work ++++++++++ // */
+
+.service>h1 {
+  padding-top: 6vmin;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.service>p {
+  font-size: 1.2em;
+  padding-bottom: 8vmin;
+}
+
+.service .cards .card {
+  width: 22rem;
+  margin: 3vmin 2vmin;
+}
+
+.cards div {
+  padding: 0.1em;
+  margin: 0.1em;
+}
+
+.card {
+  border: none;
+  box-shadow: 0px 3px 5px rgba(59, 43, 43, 0.1);
+}
+
+.card .card-text {
+  padding: 2rem 3rem;
+  color: rgb(44, 44, 44);
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-service:hover {
+  transform: scale(1.01);
+}
+
+/* // +++++++++ Contact Form ++++++++++  // */
+
+.input-group {
+  padding-bottom: 1rem;
+}
+
+/* // ++++++++++ Footer ++++++++++  // */
+footer {
+  background: #fdfeff;
+  overflow-x: hidden;
+  padding: 10vmin 16vmin 1vmin;
+}
+
+footer a>span {
+  color: #0096c4;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+footer .column i {
+  color: #00c3ff;
+  padding-right: 15px;
+}
+
+footer .contactform {
+  padding-bottom: 2em;
+}
+
+footer .copyright {
+  margin-top: 3vmin;
+  color: #00c3ff !important;
+}
+
+/* It is Adjacent sibling combinator */
+
+footer .column i+i {
+  padding: 0 0.5em;
+}
+
+footer .txt-area {
+  border: none !important;
+}
+
+footer .txt-area::placeholder {
+  color: white !important;
+}
+
+
+footer .text-color {
+  color: #00c3ff;
+}
+
+footer .btn-contact {
+  color: #ffffff;
+  background-color: #343a40;
+}
+
+/* // ++++++++++ Animation ++++++++++ // */
+
+/* Frontpage Fade In */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Navbar Fade In Down*/
+.fadeInDown {
+  opacity: 0;
+  animation: fadeInDown ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* // +++++++++ Sticky Navigation + Dropdown Animation ++++++++++  // */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #2a2b2b;
+  z-index: 9999;
+  opacity: 0;
+  animation: fadeDown ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* // ++++++++++ Mobile view ++++++++++ // */
+
+@media screen and (max-width: 768px) {
+  header .navbar-brand {
+    padding-left: 1rem;
+  }
+
+  .about .row .col-md-6 .panel {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+
+  footer .row .col-md-2 {
+    margin-top: 8vmin;
+  }
 }
