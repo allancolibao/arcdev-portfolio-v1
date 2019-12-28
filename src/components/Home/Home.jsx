@@ -1,13 +1,13 @@
 import React from "react";
 import NavBar from "./Home/NavBar/NavBar";
-import FrontPage from "./Home/FrontPage/FrontPage";
+import LandingPage from "./Home/LandingPage/LandingPage";
 
 class Home extends React.Component {
     render() {
         return (
             <header>
                 <NavBar component={NavBar} />
-                <FrontPage component={FrontPage} />
+                <LandingPage component={LandingPage} />
             </header>
         );
     }

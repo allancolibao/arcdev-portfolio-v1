@@ -20,8 +20,8 @@ class NavList extends Component {
                 },
                 {
                     id: 3,
-                    description: "Sample Work",
-                    href: "#samplework",
+                    description: "Portfolio",
+                    href: "#portfolio",
                     className: "nav-item"
                 },
                 {
