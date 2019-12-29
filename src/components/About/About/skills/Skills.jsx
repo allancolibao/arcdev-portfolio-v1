@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import LanguagesTools from "./LanguagesTools";
-import DesignTools from "./DesignTools";
+import Lang from "./lang/Lang";
+import Design from "./design/Design";
 
 class Skills extends Component {
   render() {
@@ -9,10 +9,10 @@ class Skills extends Component {
         <div className="w-100">
           <div className="row">
             <div className="col-md-6">
-              <LanguagesTools component={LanguagesTools} />
+              <Lang component={Lang} />
             </div>
             <div className="col-md-6">
-              <DesignTools component={DesignTools} />
+              <Design component={Design} />
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import InfoTitle from "./InfoTitle";
-import InfoParagraph from "./InfoParagraph";
+import Title from "./Title";
+import Desc from "./Desc";
 
 class Info extends Component {
   constructor(props) {
@@ -28,10 +28,10 @@ class Info extends Component {
   render() {
     return (
       <div className="info col-md-4 col-sm-5">
-        <InfoTitle component={InfoTitle} />
+        <Title component={Title} />
 
         {this.state.info.map(info => (
-          <InfoParagraph key={info.id} info={info}></InfoParagraph>
+          <Desc key={info.id} info={info}></Desc>
         ))}
       </div>
     );

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
-import Services from "./components/Services/Services";
+import Portfolio from "./components/Portfolio/Portfolio";
 import Footer from "./components/Footer/Footer";
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
 
                 <About component={About} />
 
-                <Services component={Services} />
+                <Portfolio component={Portfolio} />
 
                 <Footer component={Footer} />
             </React.Fragment>

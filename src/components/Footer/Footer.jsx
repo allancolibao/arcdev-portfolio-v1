@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Contact from "./contactComponents/Contact";
+import Contact from "./Contact/Contact";
 import Info from "./Info/Info";
-import Socials from "./socialMediaComponents/Socials";
-import CopyRight from "./CopyRight/CopyRight";
+import Socials from "./SocialMedia/Socials";
+import End from "./End/End";
 
 class Footer extends Component {
   render() {
@@ -15,7 +15,7 @@ class Footer extends Component {
               <Contact component={Contact} />
               <Socials component={Socials} />
             </div>
-            <CopyRight component={CopyRight} />
+            <End component={End} />
           </div>
         </footer>
       </React.Fragment>
