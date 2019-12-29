@@ -12,7 +12,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Nunito', sans-serif !important;
+  font-family: "Nunito", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -25,12 +25,12 @@ section {
 /*  Header */
 
 header {
-  background: #4467d1;
+  background: #101625;
 }
 
 header a {
   font-size: 1em;
-  color: #f5f5f5;
+  color: #85ff34;
 }
 
 header .nav-item:last-child {
@@ -55,39 +55,37 @@ header .nav-link:hover {
 }
 
 header .row .landing-page {
-  padding: 22.5vmin 1vmin;
+  padding: 16vmin 1vmin;
   padding-bottom: 35vmin;
 }
 
-header .row{
-  padding: 4.2vmin 1vmin;
+header .row {
+  padding: 3vmin 1vmin;
 }
 
-header .container .landing-page h3 {
-  padding: 1vmin;
+header .container .landing-page h2 {
+  padding: 0.5vmin;
   letter-spacing: 4px;
 }
 
 header .container .landing-page h1 {
-  font-size: 8vmin;
+  font-size: 12vmin;
   font-weight: bold;
   padding: 0.1em 0em;
 }
 
 header .container .landing-page p {
   padding: 1vmin;
-  padding-bottom: 2vmin;
+  padding-bottom: 1vmin;
 }
 
-
-.primary-btn {
-  border-radius: 30px;
-  font-weight: bold;
+header .scroll-down {
+  background-color: none !important;
+  border: none !important;
 }
 
-.secondary-btn {
-  border-radius: 20px;
-  font-weight: bold;
+header .scroll-down i:hover {
+  color: #ffffff !important;
 }
 
 /* About */
@@ -124,20 +122,43 @@ header .container .landing-page p {
   color: rgba(0, 0, 0, 0.678);
 }
 
-/* Sample Work */
+.about .progress-bar {
+  background-color: #60e00b;
+}
 
-.service>h1 {
+.about .progress-bar::-moz-progress-bar {
+  background-color: #60e00b;
+}
+
+.about .center {
+  text-align: center;
+  margin: auto !important;
+  padding-bottom: 2vmin;
+}
+
+.about .center img {
+  border: 0.9vmin solid #eeeeee;
+}
+
+/* Portfolio */
+
+section .portfolio {
+  background-color: #75dd26 !important;
+}
+
+.portfolio > h1 {
   padding-top: 6vmin;
   font-size: 2em;
   font-weight: bold;
+  color: #fff;
 }
 
-.service>p {
+.portfolio > p {
   font-size: 1.2em;
   padding-bottom: 8vmin;
 }
 
-.service .cards .card {
+.portfolio .cards .card {
   width: 22rem;
   margin: 3vmin 2vmin;
 }
@@ -159,7 +180,7 @@ header .container .landing-page p {
   font-weight: bold;
 }
 
-.card-service:hover {
+.card-portfolio:hover {
   transform: scale(1.01);
 }
 
@@ -171,13 +192,13 @@ header .container .landing-page p {
 
 /*  Footer */
 footer {
-  background: #fdfeff;
+  background: #ffffff;
   overflow-x: hidden;
   padding: 10vmin 16vmin 1vmin;
 }
 
-footer a>span {
-  color: #0096c4;
+footer a > span {
+  color: #60e00b;
 }
 
 a:hover {
@@ -185,10 +206,19 @@ a:hover {
 }
 
 footer input {
-  border: none !important;
+  border: 2px solid #c7c7c7 !important;
 }
 
 footer input::placeholder {
+  color: white !important;
+}
+
+footer .txt-area {
+  border: 2px solid #c7c7c7 !important;
+  resize: none;
+}
+
+footer .txt-area::placeholder {
   color: white !important;
 }
 
@@ -198,7 +228,7 @@ footer .input-group .input-group-text {
 }
 
 footer .column i {
-  color: #00c3ff;
+  color: #60e00b;
   padding-right: 15px;
 }
 
@@ -208,31 +238,35 @@ footer .contactform {
 
 footer .copyright {
   margin-top: 3vmin;
-  color: #00c3ff !important;
+  color: #60e00b !important;
 }
 
 /* It is Adjacent sibling combinator */
 
-footer .column i+i {
+footer .column i + i {
   padding: 0 0.5em;
 }
 
-footer .txt-area {
-  border: none !important;
-}
-
-footer .txt-area::placeholder {
-  color: white !important;
-}
-
-
 footer .text-color {
-  color: #00c3ff;
+  color: #60e00b;
 }
 
 footer .btn-contact {
   color: #ffffff;
-  background-color: #343a40;
+  background-color: #6c757d;
+  border-radius: 4em;
+  border: none !important;
+}
+
+footer .btn-contact:hover {
+  color: #ffffff;
+  background-color: #52585e;
+  border-radius: 5em;
+  border: none !important;
+}
+
+footer .info {
+  padding-bottom: 8vmin !important;
 }
 
 /*  Animation */
@@ -298,7 +332,7 @@ footer .btn-contact {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #2a2b2b;
+  background: #101625;
   z-index: 9999;
   opacity: 0;
   animation: fadeDown ease-in 1;
