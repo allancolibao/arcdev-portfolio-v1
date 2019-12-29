@@ -4,7 +4,7 @@ class Img extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      imgUrl: "../dp.jpg"
+      imgUrl: "./asset/dp.jpg"
     };
   }
   render() {
