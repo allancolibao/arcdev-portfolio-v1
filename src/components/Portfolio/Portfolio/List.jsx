@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Modal from "react-modal";
+import ReactModal from "react-modal";
 
 const customStyles = {
   content: {
@@ -8,12 +8,11 @@ const customStyles = {
     right: "auto",
     bottom: "auto",
     marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    width: "70%"
+    transform: "translate(-50%, -50%)"
   }
 };
 
-Modal.setAppElement("#root");
+ReactModal.setAppElement("#root");
 
 class List extends Component {
   constructor() {
@@ -33,7 +32,6 @@ class List extends Component {
   }
 
   afterOpenModal() {
-    // references are now sync'd and can be accessed.
     this.subtitle.style.color = "#f00";
   }
 
@@ -51,21 +49,27 @@ class List extends Component {
             <h4>{description}</h4>
           </div>
         </button>
-        <Modal
+        <ReactModal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
           style={customStyles}
           contentLabel="Modal"
         >
-          <div className="container-fluid">
-            <h2 ref={subtitle => (this.subtitle = subtitle)}>{description}</h2>
-            <button onClick={this.closeModal}>close</button>
-            <div className="col-md-12">
-              <img style={{ width: "20%" }} src={imgUrl} alt=""></img>
+          <div className="frame">
+            <div className="scroll">
+              <div className="row">
+                <h2 ref={subtitle => (this.subtitle = subtitle)}>
+                  {description}
+                </h2>
+                <button className="closeModal" onClick={this.closeModal}>
+                  <i className="fa fa-times"></i>
+                </button>
+              </div>
+              <img src={imgUrl} alt=""></img>
             </div>
           </div>
-        </Modal>
+        </ReactModal>
       </div>
     );
   }

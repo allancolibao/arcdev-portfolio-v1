@@ -8,16 +8,18 @@ class Footer extends Component {
   render() {
     return (
       <React.Fragment>
-        <footer id="contact">
-          <div className="container-fluid p-0">
-            <div className="row text-left">
-              <Info component={Info} />
-              <Contact component={Contact} />
-              <Socials component={Socials} />
+        <section id="contact">
+          <footer>
+            <div className="container-fluid p-0">
+              <div className="row text-left">
+                <Info component={Info} />
+                <Contact component={Contact} />
+                <Socials component={Socials} />
+              </div>
+              <End component={End} />
             </div>
-            <End component={End} />
-          </div>
-        </footer>
+          </footer>
+        </section>
       </React.Fragment>
     );
   }

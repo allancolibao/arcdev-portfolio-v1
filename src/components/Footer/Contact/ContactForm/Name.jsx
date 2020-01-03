@@ -5,12 +5,13 @@ class Name extends Component {
     return (
       <div className="input-group pr-5">
         <input
-          className="form-control  text-white"
+          className="form-control text-grey"
           name="name"
           type="text"
           value={this.props.name}
           onChange={this.props.onChange}
           placeholder="Name"
+          required
         />
       </div>
     );

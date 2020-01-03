@@ -5,12 +5,13 @@ class Message extends Component {
     return (
       <div className="input-group pr-5">
         <textarea
-          className="form-control  text-white txt-area"
+          className="form-control text-grey txt-area"
           rows="8"
           name="message"
           value={this.props.message}
           onChange={this.props.onChange}
           placeholder="Message"
+          required
         />
       </div>
     );

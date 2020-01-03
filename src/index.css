@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+
 }
 
 body {
@@ -146,7 +147,7 @@ section .portfolio {
   background-color: #75dd26 !important;
 }
 
-.portfolio > h1 {
+.portfolio>h1 {
   padding-top: 6vmin;
   font-size: 2em;
   font-weight: bold;
@@ -176,11 +177,9 @@ section .portfolio {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 0, 0, 0),
-    rgba(0, 0, 0, 0.5)
-  );
+  background: linear-gradient(to bottom,
+      rgba(255, 0, 0, 0),
+      rgba(0, 0, 0, 0.5));
   color: #fff;
   visibility: hidden;
   opacity: 0;
@@ -190,7 +189,7 @@ section .portfolio {
 .card .card-text h4 {
   text-align: left;
   padding-left: 3vmin;
-  padding-top: 1vmin;
+  padding-top: 26vmin;
 }
 
 .card-portfolio {
@@ -210,6 +209,66 @@ section .portfolio {
   outline: none;
 }
 
+/* Modal */
+.ReactModal__Html--open,
+.ReactModal__Body--open {
+  overflow: hidden;
+
+}
+
+.ReactModal__Overlay {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.ReactModal__Content {
+  background: rgba(0, 0, 0, 0) !important;
+  outline: none;
+  border: none !important;
+  width: 70rem;
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100vh - 1rem);
+  overflow-y: hidden;
+  position: relative;
+  -ms-overflow-style: none !important;
+}
+
+.ReactModal__Content::-webkit-scrollbar {
+  display: none !important;
+}
+
+.ReactModal__Content h2 {
+  padding-bottom: 1vmin !important;
+  font-weight: bold;
+  color: #ffffff !important;
+}
+
+.ReactModal__Content img {
+  width: 99%;
+}
+
+.ReactModal__Content .closeModal {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 3vmin;
+  position: absolute;
+  right: -1px;
+}
+
+.ReactModal__Content .closeModal:focus {
+  outline: none;
+}
+
 /* Contact Form */
 
 .input-group {
@@ -223,7 +282,7 @@ footer {
   padding: 10vmin 16vmin 1vmin;
 }
 
-footer a > span {
+footer a>span {
   color: #60e00b;
 }
 
@@ -269,7 +328,7 @@ footer .copyright {
 
 /* It is Adjacent sibling combinator */
 
-footer .column i + i {
+footer .column i+i {
   padding: 0 0.5em;
 }
 
@@ -293,6 +352,12 @@ footer .btn-contact:hover {
 
 footer .info {
   padding-bottom: 8vmin !important;
+}
+
+/* Active */
+.active a {
+  color: #fff !important;
+  border-bottom: 4px solid #fff !important;
 }
 
 /*  Animation */
@@ -352,6 +417,7 @@ footer .info {
   }
 }
 
+
 /* Sticky Navigation + Dropdown Animation */
 
 .sticky {
@@ -393,6 +459,26 @@ footer .info {
     transform: none;
   }
 }
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: .8vmin;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: none !important;
+  border-radius: 2vmin;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #60e00b;
+  border-radius: 1vmin;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5fd80f;
+}
+
 
 /* Mobile view */
 

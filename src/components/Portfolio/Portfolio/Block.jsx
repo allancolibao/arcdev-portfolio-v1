@@ -9,19 +9,19 @@ class Block extends Component {
         {
           id: 1,
           imgUrl: "./asset/Boosting Content Infographics.jpg",
-          description: "Website 1",
+          description: "Content Quality",
           href: "#"
         },
         {
           id: 2,
-          imgUrl: "./asset/Boosting Content Infographics.jpg",
-          description: "Website 2",
+          imgUrl: "./asset/How To Receive a Fair Salary.jpg",
+          description: "Fair Salary",
           href: "#"
         },
         {
           id: 3,
-          imgUrl: "./asset/Boosting Content Infographics.jpg",
-          description: "Website 3",
+          imgUrl: "./asset/Optimize Your Sales Funnel.jpg",
+          description: "Sales Funnel",
           href: "#"
         }
       ]

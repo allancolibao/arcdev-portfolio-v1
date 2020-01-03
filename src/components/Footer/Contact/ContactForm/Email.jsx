@@ -5,12 +5,13 @@ class Email extends Component {
     return (
       <div className="input-group pr-5">
         <input
-          className="form-control  text-white"
+          className="form-control  text-grey"
           name="email"
           type="email"
           value={this.props.email}
           onChange={this.props.onChange}
           placeholder="Email"
+          required
         />
       </div>
     );
