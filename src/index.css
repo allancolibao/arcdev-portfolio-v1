@@ -234,7 +234,7 @@ section .portfolio {
   background: rgba(0, 0, 0, 0) !important;
   outline: none;
   border: none !important;
-  width: 70rem;
+  width: 100rem;
   max-width: calc(100vw - 2rem);
   max-height: calc(100vh - 1rem);
   overflow-y: hidden;

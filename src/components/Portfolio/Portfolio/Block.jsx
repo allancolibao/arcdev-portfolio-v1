@@ -8,20 +8,20 @@ class Block extends Component {
       list: [
         {
           id: 1,
+          imgUrl: "./asset/Mailer_150ppi.jpg",
+          description: "Mailer Tech Web Design",
+          href: "#"
+        },
+        {
+          id: 2,
           imgUrl: "./asset/Boosting Content Infographics.jpg",
           description: "Content Quality",
           href: "#"
         },
         {
-          id: 2,
+          id: 3,
           imgUrl: "./asset/How To Receive a Fair Salary.jpg",
           description: "Fair Salary",
-          href: "#"
-        },
-        {
-          id: 3,
-          imgUrl: "./asset/Optimize Your Sales Funnel.jpg",
-          description: "Sales Funnel",
           href: "#"
         }
       ]

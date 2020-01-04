@@ -8,7 +8,7 @@ class Skills extends Component {
       <section className="p-3 p-lg-5 d-flex align-items-center">
         <div className="w-100">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6" style={{ paddingBottom: "1vmin" }}>
               <Lang component={Lang} />
             </div>
             <div className="col-md-6">
