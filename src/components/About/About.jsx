@@ -16,7 +16,9 @@ class About extends React.Component {
                 <div className="col-md-12 center">
                   <Img component={Img} />
                 </div>
-                <Desc component={Desc} />
+                <div style={{ paddingBottom: "2vmin" }}>
+                  <Desc component={Desc} />
+                </div>
                 <Skills component={Skills} />
               </div>
             </div>

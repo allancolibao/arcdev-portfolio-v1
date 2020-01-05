@@ -125,6 +125,8 @@ header .scroll-down i:hover {
 
 .about .progress-bar {
   background-color: #60e00b;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .about .progress-bar::-moz-progress-bar {
@@ -177,9 +179,9 @@ section .portfolio {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to bottom,
+  background: linear-gradient(to top,
       rgba(255, 0, 0, 0),
-      rgba(0, 0, 0, 0.5));
+      rgba(0, 0, 0, 0.6));
   color: #fff;
   visibility: hidden;
   opacity: 0;
@@ -189,7 +191,7 @@ section .portfolio {
 .card .card-text h4 {
   text-align: left;
   padding-left: 3vmin;
-  padding-top: 26vmin;
+  padding-top: 2vmin;
 }
 
 .card-portfolio {

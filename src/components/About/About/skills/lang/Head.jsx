@@ -4,7 +4,9 @@ class Head extends Component {
   render() {
     return (
       <div className="subheading mb-3">
-        <strong>Programming Languages &amp; Tools</strong>
+        <h6>
+          <strong>Programming Languages &amp; Tools</strong>
+        </h6>
       </div>
     );
   }
