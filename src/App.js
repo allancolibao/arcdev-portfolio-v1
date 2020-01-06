@@ -9,11 +9,8 @@ class App extends Component {
         return (
             <React.Fragment>
                 <Home component={Home} />
-
                 <About component={About} />
-
                 <Portfolio component={Portfolio} />
-
                 <Footer component={Footer} />
             </React.Fragment>
         );
