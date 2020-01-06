@@ -7,6 +7,7 @@ import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import * as serviceWorker from "./serviceWorker";
+import "./Analytics.js";
 
 ReactDOM.render( < App /> , document.getElementById("root"));
 
