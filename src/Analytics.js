@@ -2,16 +2,16 @@ import * as firebase from "firebase/app";
 import "firebase/analytics";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCYDXhtPxJOQ2onYEo-Nv1rSzGfaZKf79Q",
-    authDomain: "arcdev-portfolio.firebaseapp.com",
-    databaseURL: "https://arcdev-portfolio.firebaseio.com",
-    projectId: "arcdev-portfolio",
-    storageBucket: "arcdev-portfolio.appspot.com",
-    messagingSenderId: "637162258485",
-    appId: "1:637162258485:web:b4241b1d3ad5ced93b717c",
-    measurementId: "G-RVZHL4XL7T"
-    };
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_DATABASE_URL,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID,
+    measurementId: process.env.REACT_APP_MEASUREMENT_ID
+};
 
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+

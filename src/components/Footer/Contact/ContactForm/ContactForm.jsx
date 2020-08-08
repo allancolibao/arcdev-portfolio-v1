@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import emailjs from 'emailjs-com';
 import { withAlert } from "react-alert";
 import Name from "./Name";
 import Email from "./Email";
@@ -28,7 +29,7 @@ class ContactForm extends Component {
   }
 
   handleSubmit = event => {
-    const templateId = "template_sATRDK2C";
+    const templateId = process.env.REACT_APP_TEMPLATE_ID;
 
     this.sendFeedback(templateId, {
       message_html: this.state.message,
@@ -46,9 +47,10 @@ class ContactForm extends Component {
 
   sendFeedback(templateId, variables) {
     const alert = this.props.alert;
+    const serviceId =  process.env.REACT_APP_SERVICE_ID;
+    const userId = process.env.REACT_APP_USER_ID;
 
-    window.emailjs
-      .send("arcdev-gmail", templateId, variables)
+    emailjs.send(serviceId, templateId, variables, userId)
       .then(res => {
         alert.success("Message successfully sent, Thank you");
         console.log("Message successfully sent, Thank you");
